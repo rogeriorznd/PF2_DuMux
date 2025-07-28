@@ -7,7 +7,7 @@
 /*!
  * \file
  * \ingroup TwoPTwoCTests
- * \brief Os parâmetros espaciais do problema onde ar é injetado sob uma camada de baixa permeabilidade a uma profundidade de 2700m.
+ * \brief Os parâmetros espaciais do problema onde H2 é injetado sob uma camada de baixa permeabilidade a uma profundidade de 2700m.
  */
 
 #ifndef DUMUX_INJECTION_SPATIAL_PARAMS_HH
