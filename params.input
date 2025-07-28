@@ -1,0 +1,26 @@
+[TimeLoop]
+DtInitial = 250 # [s] passo de tempo inicial
+TEnd = 3e5 # [s / aproximadamente 3 dias] tempo total de simulação
+
+[Grid]
+LowerLeft = 0 0
+UpperRight = 80 40
+Cells = 50 25
+
+[Problem]
+Name = injectioncc # [-] nome dos arquivos de saída
+DepthBOR = 2700 # [m] profundidade em relação à superfície do solo
+NTemperature = 3 # [-] número de entradas na tabela de temperatura
+NPressure = 200 # [-] número de entradas na tabela de pressão
+PressureLow = 1e5 # [Pa] limite inferior de pressão para tabulação
+PressureHigh = 3e7 # [Pa] limite superior de pressão para tabulação
+TemperatureLow = 312.15 # [K] limite inferior de temperatura para tabulação
+TemperatureHigh = 314.15 # [K] limite superior de temperatura para tabulação
+Salinity = 0.1 # [-] fração mássica de sal (0 = água doce, 0.1 = 10% de salinidade [conferir referência])
+
+[SpatialParams]
+InitialTemperature = 313.15 # [K] temperatura inicial no reservatório (40°C)
+Swr = 0.2                  # saturação residual da fase líquida
+Snr = 0.0                  # saturação residual da fase gasosa
+BrooksCoreyPcEntry = 1e4   # [Pa] pressão capilar de entrada do modelo de Brooks-Corey
+BrooksCoreyLambda = 2.0    # parâmetro lambda do modelo de Brooks-Corey
